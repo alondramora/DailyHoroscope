@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  /* border: 1px solid red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)   
+    ),
+    url("images/nightsky.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+   
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.title-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.enter-sign {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+}
+
+.enter-sign input {
+        border-radius: 4px;
+        font-size: 1rem;
+        padding-left: 8px;
+        
+
+}
+
+button {
+    background: #412A52;
+    color: white;
+    border: 1px solid #412A52;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 9px 12px;
+    transition: 0.3s; 
+    margin-left: 10px;
+    opacity: 0.80; 
+    font-weight: 700;
+
+
+}
+
+button:hover {
+    background: #C591CD;
+    border: 1px solid #C591CD;
+    box-shadow: none;
+    opacity: 0.70; 
+
+
+}
+
+
+.horoscope-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    gap: 50px;
+
+    
+}
+
+.section-one {
+    background: #412A52;
+    display: flex;
+}
+
+.section-one:not(li){
+    opacity: 0.7;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 15px 0;
+}
+
+ul {
+    padding: 10px 40px;
+}
+
+
+.section-two {
+    padding-left: 2.2rem;
+    padding-right: 2rem;
+    background: #412A52;
+}
+
+.section-two:not(h2) {
+        opacity: 0.7;
+}
+
+.section-two:not(p) {
+        opacity: 0.7;
+} 
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+
