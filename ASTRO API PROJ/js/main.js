@@ -24,7 +24,5 @@ function getHoroscope() {
                 document.querySelector('#zodiac-sign').innerText = 'Choose your sign.'
             };
 
-            console.log(data)
-
         });
 }
